@@ -3,12 +3,6 @@ $(document).ready(function(){
   	var $tweetsBody = $('.tweetsBody');
   	var $header = $("#header");
 
-  	var shawnDrostTimeline = streams.users.shawndrost;
-  	var sharksforcheapTimeline = streams.users.sharksforcheap;
-  	var mracusTimeline = streams.users.mracus;
-  	var douglascalhounTimeline = streams.users.douglascalhoun;
-
-
     // $body.html('');
 
       $("button").on("click", function(){
@@ -26,6 +20,19 @@ $(document).ready(function(){
       	};
       });
 
+
+	var $individualTimelines = $('.individualTimelines')
+	var $shawnDrostTimeline = $('<div id="shawnDrostTimeline"</div');
+
+ 	for (var i = 0; i < streams.users.shawndrost.length; i++) {
+ 		$shawnDrostTimeline.text(streams.users.shawndrost[i]);
+ 	}
+
+ 	$individualTimelines.append($shawnDrostTimeline);
+
+  	// var $sharksforcheapTimeline = streams.users.sharksforcheap;
+  	// var $mracusTimeline = streams.users.mracus;
+  	// var $douglascalhounTimeline = streams.users.douglascalhoun;
 
 
 
