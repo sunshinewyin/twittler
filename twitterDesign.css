@@ -8,4 +8,19 @@ body {
 	text-align: center;
 }
 
+/*.tweetSection {
+    width: 300px;
+    padding: 25px;
+    border: 25px solid navy;
+    margin: 25px;
+}
+*/
 
+.tweetsBody {
+	background-color: white;
+	width: 500px;
+    padding: 25px;
+    border: 25px green;
+    margin: 25px;
+    text-align: center;
+}
