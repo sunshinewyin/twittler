@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     // $body.html('');
 
+// Set up streams to appear on "refresh" button
       $("button").on("click", function(){
       	var index = streams.home.length - 1;
       	$tweetsBody.empty();
@@ -20,22 +21,23 @@ $(document).ready(function(){
       	};
       });
 
-
+// Set up individual user timelines
 	var $individualTimelines = $('.individualTimelines')
-	var $shawnDrostTimeline = $('<div id="shawnDrostTimeline"</div');
 
- 	for (var i = 0; i < streams.users.shawndrost.length; i++) {
- 		$shawnDrostTimeline.text(streams.users.shawndrost[i]);
- 	}
+	var $shawnDrostTimeline = $('<div id="shawnDrostTimeline"</div>');
+	var $sharksforcheapTimeline = $('<div id="shawnDrostTimeline"</div>');
+  	var $mracusTimeline = $('<div id="shawnDrostTimeline"</div>');
+  	var $douglascalhounTimeline = $('<div id="shawnDrostTimeline"</div>');
+
+	for (var i = 0; i<streams.users.shawndrost.length; i++) {
+		$shawnDrostTimeline.text(streams.users.shawndrost[i].message)
+	};
 
  	$individualTimelines.append($shawnDrostTimeline);
 
-  	// var $sharksforcheapTimeline = streams.users.sharksforcheap;
-  	// var $mracusTimeline = streams.users.mracus;
-  	// var $douglascalhounTimeline = streams.users.douglascalhoun;
 
 
-
+  	console.log(streams.users.shawndrost[0].message);
 
 
       });
