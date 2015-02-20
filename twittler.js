@@ -2,15 +2,14 @@ $(document).ready(function(){
   	var $body = $('body');
   	var $tweetsBody = $('.tweetsBody');
   	var $header = $("#header");
-
-	var $individualTimelines = $('.individualTimelines');
-
+  	var $userTweets = $('.userTweets')
 
 // Set up streams to appear on "refresh" button
-      $("button").on("click", function(){
+    $("#header button").on("click", function(){
       	var index = streams.home.length - 1;
       	$tweetsBody.empty();
-	      while(index >= 0){
+
+	    while(index >= 0){
 	        var tweet = streams.home[index];
 	        var $tweet = $('<div class="tweetSection"</div>');
 	        var timeStamp = new Date();
@@ -23,20 +22,21 @@ $(document).ready(function(){
       });
 
 //display individual users' tweets
-		$(".individualTimelines").on("click", "button", function(){
-
+	$("#shawndrosttweets").on("click", function(){
       	var index = streams.users.shawndrost.length - 1;
-      	$individualTimelines.empty();
-	      while(index >= 0){
-	        var shawnDrostTweet = streams.users.shawndrost[index].message;
-	        var $shawnDrostTimeline = $('<div class = "individualTimelines" id="shawnDrostTimeline"</div>');
-	        // var timeCreated = streams.users.shawndrost[index].created_at;
-	        // var $timeCreated = $('<p class="tweetSection"></p>')
-	        $shawnDrostTimeline.text(shawnDrostTweet);
-	        // $timeStamp.text(timeStamp);
-	      	$individualTimelines.append($shawnDrostTimeline);
+      	$userTweets.empty();
+	    while(index >= 0){
+	      	var shawndrosttweet = streams.users.shawndrost[index].message;
+	      	var $shawndrosttimeline = $('<div id = "shawndrosttimeline"></div>');
+	        var timeCreated = streams.users.shawndrost[index].created_at;
+	        var $timeCreated = $('<p id="shawndrosttimeline"></p>')
+	        $shawndrosttimeline.text(shawndrosttweet);
+	        $timeCreated.text(timeCreated);
+	      	$userTweets.append($shawndrosttimeline, $timeCreated);
 	        index -= 1;
       	};
+
+
       });
 
 	// var $sharksforcheapTimeline = $('<div id="sharksforcheapTimeline"</div>');
