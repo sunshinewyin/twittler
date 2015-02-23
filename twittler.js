@@ -8,23 +8,41 @@ $(document).ready(function(){
   	var $mracustimeline = $('#mracustimeline');
   	var $douglascalhountimeline = $('#douglascalhountimeline');
 
+  	var $shawndrostlink = $()
+
 // Set up streams to appear on "refresh" button
     $("#refreshtweetsbutton").on("click", function(){
-      	var index = streams.home.length - 1;
-      	$tweetsBody.empty();
+      	for (var k in streams.users) {
+      		for var user
+      	}
+     });
+      	// 	for (var i = streams.users.k.length; i>0; i--) {
+      	// 		console.log(streams.users.k.i)
+      	// 	}
+      	// });
 
-	    while(index >= 0){
-	        var tweet = streams.home[index];
-	        var $tweet = $('<div id="tweetSection" class="allTweets"></div>');
-	        var timeStamp = new Date();
-	        var $timeStamp = $('<div id="timeStamp" class="allTweets"></div>');
-	        $tweet.text('@' + tweet.user + ': ' + tweet.message);
-	        $timeStamp.text(timeStamp);
-	        $tweet.append($timeStamp);
-	      	$tweetsBody.append($tweet);
-	        index -= 1;
-      	};
-      });
+
+
+
+
+
+      	// var index = streams.home.length - 1;
+      	// $tweetsBody.empty();
+
+	    // while(index >= 0){
+
+
+	       //  var tweet = streams.home[index];
+	       //  var $tweet = $('<div id="tweetSection" class="allTweets"></div>');
+	       //  var timeStamp = new Date();
+	       //  var $timeStamp = $('<div id="timeStamp" class="allTweets"></div>');
+	       //  $tweet.text('@' + tweet.user + ': ' + tweet.message);
+	       //  $timeStamp.text(timeStamp);
+	       //  $tweet.append($timeStamp);
+	      	// $tweetsBody.append($tweet);
+	       //  index -= 1;
+      	// };
+      // });
 
 //display individual users' tweets
 	$("#shawndrosttweets").on("click", function(){
