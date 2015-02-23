@@ -1,7 +1,10 @@
 $(document).ready(function(){
 
+// sets original stream so it's there when page first loads
+
 	var $tweetsBody = $('.tweetsBody');
 		var index = streams.home.length-1;
+		//empties the body of tweets so that tweets that have already been displayed are not duplicated
 		$tweetsBody.empty();
 
 			while (index>=0) {
@@ -13,7 +16,7 @@ $(document).ready(function(){
 				index -=1;
 			};
 
-
+//function for refreshing feed
 	var refreshTweets = function() {
 
 		var $tweetsBody = $('.tweetsBody');
@@ -30,12 +33,14 @@ $(document).ready(function(){
 			};
 	};
 
+//refreshes feed every 5 seconds
 	setInterval(refreshTweets,5000);
 
-
+// handler for displaying individual user timelines on click of username
 	$(document.body).on("click", ".user", function(){
 
 		var $individualTimeline = $('.individualTimeline');
+		//fetches the username from the ".user" class
 		var userName = $(this).text();
 
 		$individualTimeline.empty();
