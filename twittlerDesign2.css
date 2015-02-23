@@ -1,12 +1,31 @@
 h1.header {
 	font-family: "Gill Sans", "Century Gothic", Helvetica, sans-serif;
-	color: white;
-	font-size: 56px;
+	color: purple;
+	font-size: 75px;
 }
 
 body {
 	background-color: #6699FF;
 	text-align: center;
+}
+
+textarea {
+  float: left;
+  height: 60px;
+  width: 780px;
+  font-size: 20px;
+  color: gray;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+input {
+  float: left;
+  width: 780px;
+  margin-left: 20px;
+  background-color: white;
+  height: 40px;
+  font-size: 18px;
 }
 
 .tweetsBody {
@@ -17,6 +36,8 @@ body {
   text-align: center;
   float: left;
   margin-left: 20px;
+  margin-top: 155px;
+  position: absolute;
 }
 
 .tweets {
@@ -46,8 +67,9 @@ body {
   padding: 25px;
   border: 20px solid white;
   text-align: center;
-  float: left;
-  margin-left: 30px;
+  margin-left: 850px;
+  margin-top: 0px;
+  position: absolute;
 
 }
 
@@ -61,7 +83,20 @@ body {
 
 h2.userTimelines {
   font-family: "Gill Sans", "Century Gothic", Helvetica, sans-serif;
-  color: white;
+  color: orange;
   font-size: 40px;
-
+  background-color: white;
+  border: 15px solid orange;
+  width: 440px;
+  margin-left: 860px;
+  margin-top: 100px;
 }
+
+
+
+
+
+
+
+
+
