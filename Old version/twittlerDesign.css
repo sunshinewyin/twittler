@@ -1,0 +1,52 @@
+h1 {
+	font-family: "Gill Sans", "Century Gothic", Helvetica, sans-serif;
+	color: white;
+	font-size: 56px;
+}
+
+body {
+	background-color: #6699FF;
+	text-align: center;
+}
+
+.tweetsBody {
+	background-color: orange;
+	width: 600px;
+    padding: 25px;
+    border: 20px solid white;
+    margin: 0px auto 25px auto;
+    text-align: center;
+}
+#tweetSection {
+	width: 400px;
+    padding: 10px;
+    margin: 2px auto 2px auto;
+    width: 70%;
+    font-size: 20px;
+    background-color: white;
+}
+
+#timeStamp {
+    font-size: 13px;
+    font-family: arial;
+    color: gray;
+    margin: 5px;
+}
+
+#refreshtweetsbutton {
+	padding:5px;
+  	background-color: orange;
+  	color: white;
+  	text-decoration:none;
+  	margin-bottom: 12px;
+  	margin-left: 590px;
+}
+
+textarea {
+	font-family: arial;
+	color: gray;
+	font-size: 18px;
+	margin: 0 auto 0 auto;
+	width: 50%;
+	border: 12px orange;
+}

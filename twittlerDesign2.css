@@ -1,0 +1,67 @@
+h1.header {
+	font-family: "Gill Sans", "Century Gothic", Helvetica, sans-serif;
+	color: white;
+	font-size: 56px;
+}
+
+body {
+	background-color: #6699FF;
+	text-align: center;
+}
+
+.tweetsBody {
+	background-color: orange;
+	width: 700px;
+  padding: 25px;
+  border: 20px solid white;
+  text-align: center;
+  float: left;
+  margin-left: 20px;
+}
+
+.tweets {
+  padding: 10px;
+  margin: 2px auto 2px auto;
+  width: 80%;
+  font-size: 20px;
+  background-color: white;
+}
+
+.user {
+  text-decoration: underline;
+  font-weight: bold;
+  color:navy;
+  cursor: pointer;
+}
+
+.time {
+  color: gray;
+  font-family: arial;
+  font-size: 14px;
+}
+
+.individualTimeline {
+  background-color: orange;
+  width: 400px;
+  padding: 25px;
+  border: 20px solid white;
+  text-align: center;
+  float: left;
+  margin-left: 30px;
+
+}
+
+.userTweets {
+  padding: 10px;
+  margin: 2px auto 2px auto;
+  width: 80%;
+  font-size: 17px;
+  background-color: white;
+}
+
+h2.userTimelines {
+  font-family: "Gill Sans", "Century Gothic", Helvetica, sans-serif;
+  color: white;
+  font-size: 40px;
+
+}
